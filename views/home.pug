@@ -1,0 +1,29 @@
+html
+	head
+		title ViCaller
+		link(rel='stylesheet', href='/css/home.css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js')
+		if(login=='true')
+			script(src='/js/script.js')
+	body
+		if(login=='false')
+			form#user.form-inline(method='get',action='/enter')
+				div.form-group.col-lg-4
+					input.form-control.input-lg(type='text',placeholder='Enter a username',name='user')
+				button#login.btn.btn-success.btn-lg(type='submit') Log in
+		else if(login=='fail')
+			form#user.form-inline(method='get',action='/enter')
+				div.form-group.col-lg-4
+					input.form-control.input-lg(type='text',placeholder='Enter a username',name='user')
+				button#login.btn.btn-success.btn-lg(type='submit') Log in
+			script alert('This username is already taken')
+		else
+			ul#chatlist.nav.nav-pills.nav-stacked.col-lg-2
+			div#chatbox
+			div#messageform.form-group.col-lg-8
+				input#message.form-control.input-lg(type='text',placeholder='Enter the message')
+			button#send.btn.btn-primary.btn-lg(type='submit') Send	
+			script var username = '#{name}'		

@@ -1,0 +1,60 @@
+body
+{
+	background-image: url('/img/back.jpg'); 
+	background-size: cover;                 
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+#user
+{
+	padding-top: 250px;
+	padding-left: 400px;
+}
+#chatbox
+{
+	margin-top: 100px;
+	margin-left: 200px;
+	height: 500px;
+	width: 970px;
+	border-radius: 10px;
+	background-color: white;
+	position: relative;
+	overflow-y: auto;
+}
+#messageform
+{
+	margin-top: 5px;
+	margin-left: 210px;
+}
+#send
+{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.sentmessage
+{
+	margin-left: 5px;
+	margin-top: 5px;
+	position: relative;
+	/*background-color: #2979FF;*/
+	bottom:0px;
+	right:0px;
+}
+.recvmessage
+{
+	margin-left: 5px;
+	margin-top: 5px;
+	position: relative;
+	/*background-color: #673AB7;*/
+	bottom:0px;
+	left:0px;
+}
+.names
+{
+	color:#607D8B;
+	font-size: 24;
+}
+.message
+{
+	font-size: 20;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ViCaller",
+  "author": "Arun",
+  "description": "Real Time video chat",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "crypto": "0.0.3",
+    "express": "*",
+    "pug": "*",
+    "socket.io": "*"
+  }
+}
