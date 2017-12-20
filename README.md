@@ -1,2 +1,2 @@
 # Node-Chat
-A Text and Video Chat application in Nodejs
+A Chat application using Node.Js and Socket.IO
